@@ -1,5 +1,4 @@
 #!/bin/bash
-
 set -e
 
 echo "---> Installing docs source"
@@ -10,3 +9,5 @@ git init . && git add . && git commit -m "build"
 
 echo "---> Building preview"
 asciibinder build
+cp /opt/app-root/contrib/index.html .
+chgrp -R . root && chmod -R g+wx .
