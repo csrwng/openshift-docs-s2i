@@ -9,5 +9,5 @@ git init . && git add . && git commit -m "build"
 
 echo "---> Building preview"
 asciibinder build
-cp /opt/app-root/contrib/index.html .
+cp /opt/app-root/contrib/index.html ./_preview
 chgrp -R root . && chmod -R g+wx .
