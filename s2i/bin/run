@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd ./docs
-asdf
+asdf --port 8080
