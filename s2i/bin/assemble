@@ -8,6 +8,6 @@ cd docs
 git init . && git add . && git commit -m "build"
 
 echo "---> Building preview"
-asciibinder build
+JAVA_HOME=/usr/lib/jvm/jre asciibinder build
 cp /opt/app-root/contrib/index.html ./_preview
 chgrp -R root . && chmod -R g+wx .
